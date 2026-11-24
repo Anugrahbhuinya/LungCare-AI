@@ -1,0 +1,24 @@
+{
+    "model_name": "LungCare DenseNet121",
+    "architecture": "DenseNet121",
+    "input_size": [
+        224,
+        224
+    ],
+    "input_channels": 3,
+    "preprocessing": "tf.keras.applications.densenet.preprocess_input",
+    "color_mode": "RGB",
+    "class_mapping": {
+        "0": "COVID19",
+        "1": "NORMAL",
+        "2": "PNEUMONIA",
+        "3": "TURBERCULOSIS"
+    },
+    "display_names": {
+        "COVID19": "COVID-19",
+        "NORMAL": "Normal",
+        "PNEUMONIA": "Pneumonia",
+        "TURBERCULOSIS": "Tuberculosis"
+    },
+    "model_file": "lungcare_densenet121.h5"
+}

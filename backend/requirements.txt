@@ -1,0 +1,19 @@
+# Dependencies for LungCare AI Backend — Phase 2.1
+# Note: Pinned for enterprise stability and compatibility.
+# Machine learning dependencies (TensorFlow/Keras) are purposefully omitted
+# in Phase 2.1 and will be introduced in Phase 2.2.
+
+# Web Framework & Server
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.30.0,<1.0.0
+python-multipart>=0.0.12,<1.0.0
+
+# Settings & Data Validation
+pydantic>=2.10.0,<3.0.0
+pydantic-settings>=2.7.0,<3.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# HTTP Client & Testing
+httpx>=0.28.0,<1.0.0
+pytest>=8.0.0,<10.0.0
+

@@ -1,0 +1,71 @@
+{
+    "model": "LungCare DenseNet121 Weighted",
+    "dataset": "Stratified validation set",
+    "validation_samples": 949,
+    "accuracy": 0.9768177028451,
+    "classification_report": {
+        "COVID19": {
+            "precision": 0.9571428571428572,
+            "recall": 0.9710144927536232,
+            "f1-score": 0.9640287769784173,
+            "support": 69.0
+        },
+        "NORMAL": {
+            "precision": 0.937799043062201,
+            "recall": 0.9751243781094527,
+            "f1-score": 0.9560975609756097,
+            "support": 201.0
+        },
+        "PNEUMONIA": {
+            "precision": 0.9929824561403509,
+            "recall": 0.9741824440619621,
+            "f1-score": 0.9834926151172894,
+            "support": 581.0
+        },
+        "TURBERCULOSIS": {
+            "precision": 0.98,
+            "recall": 1.0,
+            "f1-score": 0.98989898989899,
+            "support": 98.0
+        },
+        "accuracy": 0.9768177028451,
+        "macro avg": {
+            "precision": 0.9669810890863523,
+            "recall": 0.9800803287312595,
+            "f1-score": 0.9733794857425766,
+            "support": 949.0
+        },
+        "weighted avg": {
+            "precision": 0.9773480208808255,
+            "recall": 0.9768177028451,
+            "f1-score": 0.9769366762495832,
+            "support": 949.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            67,
+            0,
+            0,
+            2
+        ],
+        [
+            1,
+            196,
+            4,
+            0
+        ],
+        [
+            2,
+            13,
+            566,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            98
+        ]
+    ]
+}

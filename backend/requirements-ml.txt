@@ -1,0 +1,29 @@
+# ==============================================================================
+# LungCare AI — Machine Learning Inference Requirements (Phase 2.2.1 / 2.2.2)
+# ==============================================================================
+# Platform: Python 3.11 (64-bit) on Windows / Linux / WSL2
+# Target Model: DenseNet121 Chest X-ray Multi-class Classifier
+# Model Format: Keras 3 native (.keras) and HDF5 (.h5)
+# Baseline: CPU inference baseline with optional CUDA acceleration on WSL2/Linux
+# ==============================================================================
+
+# Core Deep Learning Framework (includes tensorflow-intel on Windows)
+tensorflow==2.17.1
+
+# High-Level Neural Network API (Keras 3)
+keras==3.15.1
+
+# Numerical Computing (Strictly pinned to <2.0.0 for TensorFlow C-extension ABI stability)
+numpy==1.26.4
+
+# Image Ingestion & Preprocessing (224x224 RGB conversion)
+pillow==10.4.0
+
+# Hierarchical Data Format for .h5 Model Weights
+h5py==3.16.0
+
+# Protocol Buffers Serialization
+protobuf==4.25.9
+
+# Test Execution & Quality Assurance
+pytest==9.2.0

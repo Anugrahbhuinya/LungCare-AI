@@ -1,0 +1,55 @@
+# ==============================================================================
+# LungCare AI — Root .gitignore
+# ==============================================================================
+
+# Python virtual environments
+backend/.venv-ml/
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python bytecode, caches & test artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Node.js / Frontend dependencies & build outputs
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+build/
+
+# Environment files (preserve *.env.example templates)
+.env
+.env.*
+!.env.example
+
+# Temporary scratch scripts and generated test artifacts
+scratch/
+
+# Logs & temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# IDE & Editor caches
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific metadata
+.DS_Store
+Thumbs.db
+desktop.ini
