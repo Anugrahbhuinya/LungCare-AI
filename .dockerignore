@@ -1,0 +1,40 @@
+# ==============================================================================
+# LungCare AI — Docker Build Context Exclusions (Backend Image)
+# ==============================================================================
+
+# Git & repository documentation
+.git/
+.gitignore
+README.md
+docs/
+scratch/
+
+# Frontend application & node artifacts (deployed separately on Vercel)
+frontend/
+
+# Python virtual environments, caches & tests
+backend/.venv-ml/
+**/.venv*/
+**/venv/
+**/env/
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/.pytest_cache/
+backend/tests/
+backend/verify_ml_runtime.py
+
+# Local environment & secret files
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs, temporary & IDE/OS metadata
+*.log
+*.tmp
+*.temp
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
